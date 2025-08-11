@@ -11,8 +11,8 @@ import {
   arrayRemove,
   serverTimestamp,
 } from 'firebase/firestore';
-import { db } from '@lib/firebase';
-import { useAuthContext } from '@contexts/AuthContext';
+import { db } from '@/lib/firebase';
+import { useAuthContext } from '@/contexts/AuthContext';
 import { Lobby, LobbyUser, LobbyData } from '@/types/lobby';
 
 export function useLobby(lobbyId: string) {

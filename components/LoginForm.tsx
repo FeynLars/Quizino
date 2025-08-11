@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { useAuthContext } from '@contexts/AuthContext';
+import { useAuthContext } from '@/contexts/AuthContext';
 
 export default function LoginForm() {
   const [isSignUp, setIsSignUp] = useState(false);

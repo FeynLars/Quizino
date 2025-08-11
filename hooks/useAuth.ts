@@ -10,7 +10,7 @@ import {
   signOut,
   User
 } from 'firebase/auth';
-import { app } from '@lib/firebase'
+import { app } from '@/lib/firebase'
 
 const auth = getAuth(app);
 const provider = new GoogleAuthProvider();

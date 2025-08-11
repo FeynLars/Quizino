@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useAuthContext } from '@contexts/AuthContext';
+import { useAuthContext } from '@/contexts/AuthContext';
 import { useRouter } from 'next/navigation';
 import { 
   collection, 
@@ -12,7 +12,7 @@ import {
   query, 
   orderBy 
 } from 'firebase/firestore';
-import { db } from '@lib/firebase';
+import { db } from '@/lib/firebase';
 
 interface Question {
   id: string;

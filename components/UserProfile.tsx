@@ -1,6 +1,6 @@
 'use client';
 
-import { useAuthContext } from '@contexts/AuthContext';
+import { useAuthContext } from '@/contexts/AuthContext';
 import Image from 'next/image';
 
 export default function UserProfile() {

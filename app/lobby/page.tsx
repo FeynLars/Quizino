@@ -1,8 +1,8 @@
 'use client';
 
 import React from 'react';
-import CreateLobbyButton from '@components/CreateLobbyButton';
-import JoinLobbyForm from '@components/JoinLobbyForm';
+import CreateLobbyButton from '@/components/CreateLobbyButton';
+import JoinLobbyForm from '@/components/JoinLobbyForm';
 
 export default function LobbyPage() {
   return (

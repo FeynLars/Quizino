@@ -2,8 +2,8 @@
 
 import { useEffect, useState, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
-import { useAuthContext } from '@contexts/AuthContext';
-import { useLobby } from '@hooks/useLobby';
+import { useAuthContext } from '@/contexts/AuthContext';
+import { useLobby } from '@/hooks/useLobby';
 import LobbyUserList from './LobbyUserList';
 import LobbyControls from './LobbyControls';
 

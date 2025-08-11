@@ -2,8 +2,8 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import { useGameEngine } from '@hooks/useGameEngine';
-import { useAuthContext } from '@contexts/AuthContext';
+import { useGameEngine } from '@/hooks/useGameEngine';
+import { useAuthContext } from '@/contexts/AuthContext';
 import { Player } from '@/types/game';
 
 interface GameEngineProps {

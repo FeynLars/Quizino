@@ -1,9 +1,9 @@
 'use client';
 
 import { useParams } from 'next/navigation';
-import { useGameEngine } from '@hooks/useGameEngine';
+import { useGameEngine } from '@/hooks/useGameEngine';
 import React from 'react';
-import GameClient from '@components/GameClient';
+import GameClient from '@/components/GameClient';
 
 export default function GamePage() {
   const params = useParams();
