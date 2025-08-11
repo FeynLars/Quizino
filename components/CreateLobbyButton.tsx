@@ -59,7 +59,7 @@ export default function CreateLobbyButton() {
 
       await batch.commit();
 
-      router.push(`/lobby/${lobbyId}`);
+      router.push(`/game/${lobbyId}`);
     } catch (error) {
       console.error('Feil ved oppretting av lobby:', error);
       alert('Kunne ikke opprette lobby. Prøv igjen.');
