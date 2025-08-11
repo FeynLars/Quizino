@@ -2,7 +2,7 @@
 
 import { useState, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
-import { db } from '../../lib/firebase'; // ✅ Riktig sti siden vi er i app/components
+import { db } from '@/lib/firebase';
 import { doc, writeBatch, serverTimestamp } from 'firebase/firestore';
 import { getAuth } from 'firebase/auth';
 
