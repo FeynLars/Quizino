@@ -1,0 +1,46 @@
+
+diff --git a/components/CreateLobbyButton.tsx b/components/CreateLobbyButton.tsx
+index 1111111..2222222 100644
+--- a/components/CreateLobbyButton.tsx
++++ b/components/CreateLobbyButton.tsx
+@@ -4,7 +4,7 @@
+ import { useState, useCallback } from 'react';
+ import { useRouter } from 'next/navigation';
+-import { db } from '../../lib/firebase';
++import { db } from '@/lib/firebase';
+ import { doc, writeBatch, serverTimestamp } from 'firebase/firestore';
+ import { getAuth } from 'firebase/auth';
+ 
+@@ -61,7 +61,7 @@
+ 
+       await batch.commit();
+ 
+-      router.push(`/lobby/${lobbyId}`);
++      router.push(`/game/${lobbyId}`);
+     } catch (error) {
+       console.error('Feil ved oppretting av lobby:', error);
+       alert('Kunne ikke opprette lobby. Prøv igjen.');
+diff --git a/tsconfig.json b/tsconfig.json
+index 3333333..4444444 100644
+--- a/tsconfig.json
++++ b/tsconfig.json
+@@ -17,13 +17,8 @@
+     "jsx": "preserve",
+     "baseUrl": ".",
+-    "paths": {
+-      "@components/*": ["components/*"],
+-      "@hooks/*": ["hooks/*"],
+-      "@contexts/*": ["contexts/*"],
+-      "@lib/*": ["lib/*"],
+-      "@/types/*": ["types/*"]
+-    },
+-    "plugins": [
+-      {
+-        "name": "next"
+-      }
+-    ]
++    "paths": { "@/*": ["./*"] },
++    "plugins": [{ "name": "next" }]
+   },
+   "include": ["**/*.ts", "**/*.tsx", "next-env.d.ts", ".next/types/**/*.ts"],
+   "exclude": ["node_modules"]
